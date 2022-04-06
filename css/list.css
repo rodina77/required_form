@@ -1,0 +1,136 @@
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(9, 9, 9, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
+.navbar ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.navbar li {
+    position: relative;
+}
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: #3498db;
+}
+
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555555;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+.navbar .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+	height: 100%;
+    z-index: 99;
+    opacity: 1;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+}
+
+.navbar .dropdown .ul1 li {
+    min-width: 200px;
+}
+.navbar .dropdown .ul1 a {
+    padding: 10px 20px;
+	text-decoration: none;
+}
+
+.navbar a, .navbar a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #222222;
+	text-decoration: none;
+}
+
+.navbar .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#header {
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 22px 0;
+    background: #fff;
+}
+.navbar .dropdown2 .ul2 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+.navbar .dropdown:hover .ul1
+{
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	padding-bottom: 100px;
+
+}
+.listico2 .fa-times
+{
+    font-size: 35px;
+    color: #3498db;
+    float: right;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+.navbar .dropdown2:hover .ul2
+{
+    display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+    margin: 15px;
+}
+
+.navbar .getstarted, .navbar .getstarted:focus {
+    background: #3498db;
+    padding: 8px 25px;
+	margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    color: rgb(255, 254, 254);
+	
+}
+.getstarted:hover
+{
+	color: #fff;
+	opacity: 1;
+	text-decoration: underline;
+
+}
